@@ -1,0 +1,46 @@
+name: Sync CWL data
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cwl-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Poll Clash of Clans API and append new attacks to history
+        env:
+          COC_API_KEY: ${{ secrets.COC_API_KEY }}
+          CLAN_TAG: ${{ secrets.CLAN_TAG }}
+        run: python scripts/poll_wars.py
+
+      - name: Rebuild data/data.json from history
+        run: python scripts/build_dashboard.py
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "cwl-sync-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add history/ data/data.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Sync CWL data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
