@@ -20,18 +20,32 @@ _session.headers.update({
 })
 
 
-def _get(path, params=None, allow_404=False):
+def _get(path, params=None, allow_404=False, allow_403=False):
     url = BASE_URL + path
     for attempt in range(3):
         try:
             resp = _session.get(url, params=params, timeout=20)
-        except requests.RequestException as e:
+        except requests.RequestException:
             if attempt == 2:
                 raise
             time.sleep(2 * (attempt + 1))
             continue
         if resp.status_code == 404 and allow_404:
             return None
+        if resp.status_code == 403:
+            if allow_403:
+                try:
+                    reason = resp.json().get("reason")
+                except Exception:
+                    reason = None
+                if reason == "accessDenied":
+                    print(f"WARNING: {path} -> 403 accessDenied. "
+                          "El war log del clan probablemente está en privado "
+                          "(Configuración del clan > War Log > Público). Saltando esta llamada.")
+                else:
+                    print(f"WARNING: {path} -> 403 ({reason or 'sin motivo informado'}). Saltando esta llamada.")
+                return None
+            resp.raise_for_status()
         if resp.status_code == 429:
             time.sleep(5 * (attempt + 1))
             continue
@@ -60,14 +74,17 @@ def get_clan_members(clan_tag):
 
 
 def get_current_war(clan_tag):
-    """Regular (non-CWL) current war. Returns None if private or no war."""
-    return _get(f"/clans/{tag_path(clan_tag)}/currentwar", allow_404=True)
+    """Regular (non-CWL) current war. Returns None if there's no war right
+    now, or if the clan's war log is set to private (the API blocks this
+    endpoint the same way it blocks the war log in that case)."""
+    return _get(f"/clans/{tag_path(clan_tag)}/currentwar", allow_404=True, allow_403=True)
 
 
 def get_cwl_group(clan_tag):
-    """Current CWL league group, or None if the clan isn't in a CWL round."""
-    return _get(f"/clans/{tag_path(clan_tag)}/currentwar/leaguegroup", allow_404=True)
+    """Current CWL league group, or None if the clan isn't in a CWL round
+    (or the war log is private)."""
+    return _get(f"/clans/{tag_path(clan_tag)}/currentwar/leaguegroup", allow_404=True, allow_403=True)
 
 
 def get_cwl_war(war_tag):
-    return _get(f"/clanwarleagues/wars/{tag_path(war_tag)}")
+    return _get(f"/clanwarleagues/wars/{tag_path(war_tag)}", allow_403=True)
