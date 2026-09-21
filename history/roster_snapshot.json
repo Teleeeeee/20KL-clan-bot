@@ -1,7 +1,7 @@
 {
   "clan_name": "20,000 Leagues",
   "clan_tag": "#2VJ2LPY8",
-  "fetched_at": "2026-09-21T19:16:19.039741+00:00",
+  "fetched_at": "2026-09-21T19:59:45.208571+00:00",
   "members": [
     {
       "tag": "#8VPQY29Y0",
@@ -184,12 +184,12 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/qVORiRguZ-xMq8L0g7rE1-rZuiA-lKlI8VKuMndRy4w.png"
         }
       },
-      "trophies": 0,
-      "builderBaseTrophies": 3818,
+      "trophies": 57,
+      "builderBaseTrophies": 3840,
       "clanRank": 4,
       "previousClanRank": 6,
       "donations": 3491,
-      "donationsReceived": 2651,
+      "donationsReceived": 2732,
       "playerHouse": {
         "elements": [
           {
@@ -1069,7 +1069,7 @@
       "builderBaseTrophies": 1189,
       "clanRank": 21,
       "previousClanRank": 21,
-      "donations": 1691,
+      "donations": 1772,
       "donationsReceived": 986,
       "playerHouse": {
         "elements": [
