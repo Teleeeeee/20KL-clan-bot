@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sala de Guerra CWL</title>
+<meta name="description" content="Ranking, plan de rotación y estadísticas de guerra del clan.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --bg:#f3f1e9; --surface:#ffffff; --surface-2:#ece8db; --border:#ddd6c3;
+    --text:#241f16; --text-dim:#75705f; --accent:#b3791b; --accent-ink:#5c3f0e;
+    --accent-soft:#f3e2bd; --teal:#2f6d64; --teal-soft:#dcece7;
+    --danger:#a8402f; --danger-soft:#f4ddd6; --good:#3f7a4e; --good-soft:#dcecdf;
+    --shadow: 0 1px 2px rgba(40,30,10,.06), 0 6px 20px -8px rgba(40,30,10,.18);
+    --radius: 10px; color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark){ :root{
+    --bg:#14140f; --surface:#1d1c15; --surface-2:#26241a; --border:#3a3626;
+    --text:#f1ede0; --text-dim:#a9a28b; --accent:#e0a83c; --accent-ink:#ffe7b0;
+    --accent-soft:#3a2f11; --teal:#7fc3b6; --teal-soft:#1b332e;
+    --danger:#e2897a; --danger-soft:#3a2019; --good:#8bcf9c; --good-soft:#1c3322;
+    --shadow: 0 1px 2px rgba(0,0,0,.35), 0 10px 26px -10px rgba(0,0,0,.55);
+    color-scheme: dark;
+  }}
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    padding-inline:16px; padding-block:0 28px; max-width:980px; margin:0 auto;
+  }
+  h1,h2{ font-family:"Oswald", "Arial Narrow", sans-serif; letter-spacing:.01em; margin:0; }
+  .num{ font-variant-numeric: tabular-nums; }
+  header.top{ position:sticky; top:0; background:var(--bg); padding-block:14px 10px; z-index:5; border-bottom:1px solid var(--border); }
+  .brand{ display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+  .brand h1{ font-size:22px; text-transform:uppercase; }
+  .brand .tag{ color:var(--text-dim); font-size:13px; }
+  .meta-line{ color:var(--text-dim); font-size:12px; margin-top:2px; }
+  nav.tabs{ display:flex; gap:6px; margin-top:12px; overflow-x:auto; padding-bottom:2px; -webkit-overflow-scrolling:touch; }
+  nav.tabs button{ flex:0 0 auto; font-family:"Oswald", sans-serif; text-transform:uppercase; font-size:12.5px; letter-spacing:.03em;
+    padding:8px 14px; border-radius:999px; border:1px solid var(--border); background:var(--surface); color:var(--text-dim); cursor:pointer; }
+  nav.tabs button.active{ background:var(--accent); border-color:var(--accent); color:#1c1204; }
+  @media (prefers-color-scheme: dark){ nav.tabs button.active{ color:#241a05; } }
+  section.view{ padding-top:16px; }
+  section.view[hidden]{ display:none!important; }
+  .kpi-row{ display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; margin-bottom:18px; }
+  .kpi{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:12px 14px; box-shadow:var(--shadow); }
+  .kpi .label{ font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--text-dim); }
+  .kpi .value{ font-family:"Oswald",sans-serif; font-size:24px; margin-top:2px; color:var(--accent-ink); }
+  .card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px; box-shadow:var(--shadow); margin-bottom:16px; }
+  .card h2{ font-size:15px; text-transform:uppercase; margin-bottom:2px; }
+  .card .sub{ color:var(--text-dim); font-size:12.5px; margin-bottom:12px; }
+  .toolbar{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:12px; }
+  input[type="search"]{ background:var(--surface-2); border:1px solid var(--border); color:var(--text); border-radius:8px; padding:7px 10px; font-size:13px; font-family:inherit; }
+  .seg{ display:inline-flex; border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  .seg button{ background:var(--surface-2); border:none; color:var(--text-dim); padding:6px 12px; font-size:12.5px; font-family:"Oswald",sans-serif; text-transform:uppercase; cursor:pointer; }
+  .seg button.active{ background:var(--accent); color:#1c1204; }
+  .tablewrap{ overflow-x:auto; border-radius:8px; border:1px solid var(--border); }
+  table{ border-collapse:collapse; width:100%; font-size:13px; min-width:560px; }
+  thead th{ position:sticky; top:0; background:var(--surface-2); text-align:left; padding:8px 10px; font-size:11px; text-transform:uppercase;
+    letter-spacing:.03em; color:var(--text-dim); border-bottom:1px solid var(--border); white-space:nowrap; }
+  tbody td{ padding:7px 10px; border-bottom:1px solid var(--border); white-space:nowrap; }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr:hover{ background:var(--surface-2); }
+  td.name{ font-weight:600; }
+  td.rank{ color:var(--text-dim); }
+  .pill{ display:inline-flex; align-items:center; gap:5px; padding:2px 9px; border-radius:999px; font-size:11.5px; font-weight:600; white-space:nowrap; }
+  .pill.alta{ background:var(--good-soft); color:var(--good); }
+  .pill.media{ background:var(--accent-soft); color:var(--accent-ink); }
+  .pill.baja{ background:var(--danger-soft); color:var(--danger); }
+  .pill.rol{ background:var(--teal-soft); color:var(--teal); }
+  .dot{ width:7px; height:7px; border-radius:50%; background:currentColor; display:inline-block; }
+  .trend{ font-weight:700; } .trend.up{ color:var(--good); } .trend.down{ color:var(--danger); } .trend.flat{ color:var(--text-dim); }
+  .stars{ color:var(--accent-ink); font-weight:700; }
+  .estado-ok{ color:var(--good); font-weight:600; } .estado-pend{ color:var(--text-dim); }
+  .badge-tipo{ font-size:10.5px; text-transform:uppercase; color:var(--text-dim); }
+  .empty{ text-align:center; padding:40px 10px; color:var(--text-dim); }
+  .footnote{ font-size:11.5px; color:var(--text-dim); margin-top:6px; }
+  .banner{ background:var(--accent-soft); color:var(--accent-ink); border-radius:8px; padding:8px 12px; font-size:12.5px; margin-bottom:14px; }
+  @media (max-width:520px){ .brand h1{ font-size:19px; } .kpi .value{ font-size:20px; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <h1 id="clanName">Sala de Guerra CWL</h1>
+    <span class="tag" id="clanTag">#2VJ2LPY8</span>
+  </div>
+  <div class="meta-line" id="metaLine">Cargando datos…</div>
+  <nav class="tabs">
+    <button data-tab="resumen" class="active">Resumen</button>
+    <button data-tab="ranking">Ranking</button>
+    <button data-tab="plan">Plan CWL</button>
+    <button data-tab="stats">Stats</button>
+    <button data-tab="clan">Clan</button>
+  </nav>
+</header>
+
+<div class="banner">Vista pública de solo lectura — se actualiza sola cada 30-60 min. Para editar el plan de rotación, los líderes usan la versión con login.</div>
+
+<section class="view" id="view-resumen">
+  <div class="kpi-row" id="kpiRow"></div>
+  <div class="card">
+    <h2>Top 15 — mejor score combinado</h2>
+    <div class="sub">65% mes actual + 35% mes anterior.</div>
+    <div class="tablewrap"><table id="top15Table"><thead></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<section class="view" id="view-ranking" hidden>
+  <div class="card">
+    <h2>Ranking completo</h2>
+    <div class="toolbar"><input type="search" id="rankingSearch" placeholder="Buscar jugador…"></div>
+    <div class="tablewrap"><table id="rankingTable"><thead></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<section class="view" id="view-plan" hidden>
+  <div class="card">
+    <h2>Rotación de 7 días</h2>
+    <div class="sub">Cargada por los líderes.</div>
+    <div class="tablewrap"><table id="planTable"><thead></thead><tbody></tbody></table></div>
+  </div>
+  <div class="card">
+    <h2>Control de estrellas</h2>
+    <div class="tablewrap"><table id="controlTable"><thead></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<section class="view" id="view-stats" hidden>
+  <div class="card">
+    <h2>Estadísticas de guerra</h2>
+    <div class="toolbar">
+      <div class="seg" id="statsRange"><button data-range="1m" class="active">Último mes</button><button data-range="2m">2 meses</button></div>
+      <input type="search" id="statsSearch" placeholder="Buscar jugador…">
+    </div>
+    <div class="tablewrap"><table id="statsTable"><thead></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<section class="view" id="view-clan" hidden>
+  <div class="card">
+    <h2>Roster del clan</h2>
+    <div class="toolbar"><input type="search" id="clanSearch" placeholder="Buscar jugador…"></div>
+    <div class="tablewrap"><table id="clanTable"><thead></thead><tbody></tbody></table></div>
+  </div>
+</section>
+
+<script>
+(function(){
+  "use strict";
+  var state = { ranking:[], top15:[], indicadores:{}, planRotacion:[], controlEstrellas:[], stats1m:[], stats2m:[], clan:[], meta:{} };
+
+  function fmtPct(v){ return (v==null) ? "—" : (Math.round(v*10)/10) + "%"; }
+  function fmtStars(v){ return (v==null) ? "—" : Number(v).toFixed(2); }
+  function fmtNum(v,d){ return (v==null) ? "—" : Number(v).toFixed(d==null?0:d); }
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];}); }
+  function trendArrow(v){
+    if(v==null) return '<span class="trend flat">—</span>';
+    if(v>0.5) return '<span class="trend up">▲ '+Math.abs(v).toFixed(1)+'</span>';
+    if(v<-0.5) return '<span class="trend down">▼ '+Math.abs(v).toFixed(1)+'</span>';
+    return '<span class="trend flat">■ '+v.toFixed(1)+'</span>';
+  }
+  function confPill(c){ var cls=c==="Alta"?"alta":c==="Media"?"media":"baja"; return '<span class="pill '+cls+'"><span class="dot"></span>'+esc(c||"—")+'</span>'; }
+  function rolPill(r){ return '<span class="pill rol">'+esc(r||"—")+'</span>'; }
+  function byIncludes(fields){ return function(row,q){ q=q.toLowerCase(); return fields.some(function(f){ return String(row[f]||"").toLowerCase().indexOf(q)!==-1; }); }; }
+
+  document.querySelectorAll("nav.tabs button").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      document.querySelectorAll("nav.tabs button").forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      document.querySelectorAll("section.view").forEach(function(v){ v.hidden = true; });
+      document.getElementById("view-"+btn.dataset.tab).hidden = false;
+    });
+  });
+
+  function renderResumen(){
+    var ind = state.indicadores || {};
+    var kpis = [
+      ["Score promedio Top 15", fmtNum(ind["Score promedio Top 15"],1)],
+      ["Prom. ★ 1 mes (Top 15)", fmtStars(ind["Promedio estrellas 1 mes Top 15"])],
+      ["Triple rate Top 15", fmtPct((ind["Triple rate 1 mes Top 15"]||0)*100)],
+      ["Ataques perdidos", fmtPct((ind["Ataques perdidos 1 mes Top 15"]||0)*100)],
+      ["Proyección ★/día", fmtNum(ind["Proyección estrellas por día"],1)]
+    ];
+    document.getElementById("kpiRow").innerHTML = kpis.map(function(k){
+      return '<div class="kpi"><div class="label">'+esc(k[0])+'</div><div class="value num">'+k[1]+'</div></div>';
+    }).join("");
+    var head=["#","Jugador","Score","Tendencia","Prom★ 1m","%3★ 1m"];
+    var t=document.getElementById("top15Table");
+    t.querySelector("thead").innerHTML="<tr>"+head.map(function(h){return "<th>"+h+"</th>";}).join("")+"</tr>";
+    t.querySelector("tbody").innerHTML = state.top15.map(function(r){
+      return "<tr><td class='rank num'>"+r.rank+"</td><td class='name'>"+esc(r.player)+
+        "</td><td class='num'>"+fmtNum(r.score_final,1)+"</td><td>"+trendArrow(r.tendencia)+
+        "</td><td class='num stars'>"+fmtStars(r.prom1m)+"</td><td class='num'>"+fmtPct((r.p3_1m||0)*100)+"</td></tr>";
+    }).join("") || "<tr><td class='empty' colspan='6'>Sin datos todavía.</td></tr>";
+  }
+
+  function renderRanking(q){
+    var head=["#","Jugador","TH","Rol","Confianza","Score","Tend.","Prom★ 1m","%3★ 1m","Atq 1m","Prom★ 2m","%3★ 2m","Atq 2m"];
+    var t=document.getElementById("rankingTable");
+    t.querySelector("thead").innerHTML="<tr>"+head.map(function(h){return "<th>"+h+"</th>";}).join("")+"</tr>";
+    var rows = state.ranking.slice();
+    if(q) rows = rows.filter(function(r){ return byIncludes(["player","tag"])(r,q); });
+    t.querySelector("tbody").innerHTML = rows.map(function(r){
+      return "<tr><td class='rank num'>"+r.rank+"</td><td class='name'>"+esc(r.player)+
+        "</td><td class='num'>"+fmtNum(r.th,0)+"</td><td>"+rolPill(r.rol)+
+        "</td><td>"+confPill(r.confianza)+"</td><td class='num'>"+fmtNum(r.score_final,1)+
+        "</td><td>"+trendArrow(r.tendencia)+"</td><td class='num stars'>"+fmtStars(r.prom1m)+
+        "</td><td class='num'>"+fmtPct((r.p3_1m||0)*100)+"</td><td class='num'>"+fmtNum(r.atq1m,0)+
+        "</td><td class='num stars'>"+fmtStars(r.prom2m)+"</td><td class='num'>"+fmtPct((r.p3_2m||0)*100)+
+        "</td><td class='num'>"+fmtNum(r.atq2m,0)+"</td></tr>";
+    }).join("") || "<tr><td class='empty' colspan='13'>Sin resultados.</td></tr>";
+  }
+  document.getElementById("rankingSearch").addEventListener("input", function(e){ renderRanking(e.target.value); });
+
+  function renderPlan(){
+    var days=["Día 1","Día 2","Día 3","Día 4","Día 5","Día 6","Día 7"];
+    var head=["Puesto"].concat(days).concat(["Tipo"]);
+    var t=document.getElementById("planTable");
+    t.querySelector("thead").innerHTML="<tr>"+head.map(function(h){return "<th>"+h+"</th>";}).join("")+"</tr>";
+    t.querySelector("tbody").innerHTML = state.planRotacion.map(function(r){
+      var cells=["d1","d2","d3","d4","d5","d6","d7"].map(function(dk){ return "<td>"+esc(r[dk]||"—")+"</td>"; }).join("");
+      return "<tr><td class='slot num'>"+r.slot+cells+"<td class='badge-tipo'>"+esc(r.tipo||"")+"</td></tr>";
+    }).join("") || "<tr><td class='empty' colspan='9'>Sin plan cargado todavía.</td></tr>";
+  }
+
+  function renderControl(){
+    var days=["D1","D2","D3","D4","D5","D6","D7"];
+    var head=["#","Jugador","Rol"].concat(days).concat(["Total ★","Estado","Prom. result."]);
+    var t=document.getElementById("controlTable");
+    t.querySelector("thead").innerHTML="<tr>"+head.map(function(h){return "<th>"+h+"</th>";}).join("")+"</tr>";
+    t.querySelector("tbody").innerHTML = state.controlEstrellas.map(function(r){
+      var cells=["d1","d2","d3","d4","d5","d6","d7"].map(function(dk){ return "<td class='num'>"+(r[dk]==null?"—":r[dk])+"</td>"; }).join("");
+      var estadoCls=(r.total_estrellas||0)>=8 ? "estado-ok" : "estado-pend";
+      return "<tr><td class='rank num'>"+r.rank+"</td><td class='name'>"+esc(r.player)+
+        "</td><td>"+rolPill(r.rol)+cells+
+        "<td class='num stars'>"+(r.total_estrellas||0)+"</td><td class='"+estadoCls+"'>"+esc(r.estado||"")+
+        "</td><td class='num'>"+(r.prom_resultado==null?"—":r.prom_resultado)+"</td></tr>";
+    }).join("") || "<tr><td class='empty' colspan='13'>Sin datos todavía.</td></tr>";
+  }
+
+  var statsRange = "1m";
+  function renderStats(q){
+    var rows = (statsRange==="1m" ? state.stats1m : state.stats2m).slice();
+    if(q) rows = rows.filter(function(r){ return byIncludes(["name","tag"])(r,q); });
+    var head=["Jugador","TH","Atq","Prom★","%3★","%2★","%1★","%0★","%Falta","Def. Prom★","Últ. guerra"];
+    var t=document.getElementById("statsTable");
+    t.querySelector("thead").innerHTML="<tr>"+head.map(function(h){return "<th>"+h+"</th>";}).join("")+"</tr>";
+    t.querySelector("tbody").innerHTML = rows.map(function(r){
+      return "<tr><td class='name'>"+esc(r.name)+"</td><td class='num'>"+fmtNum(r.avg_th,0)+
+        "</td><td class='num'>"+fmtNum(r.atq_count,0)+"</td><td class='num stars'>"+fmtStars(r.atq_avg_stars)+
+        "</td><td class='num'>"+fmtNum(r.atq_p3s,0)+"%</td><td class='num'>"+fmtNum(r.atq_p2s,0)+
+        "%</td><td class='num'>"+fmtNum(r.atq_p1s,0)+"%</td><td class='num'>"+fmtNum(r.atq_p0s,0)+
+        "%</td><td class='num'>"+fmtNum(r.atq_pmiss,0)+"%</td><td class='num'>"+fmtStars(r.def_avg_stars)+
+        "</td><td>"+esc(r.date_last_war||"—")+"</td></tr>";
+    }).join("") || "<tr><td class='empty' colspan='11'>Sin datos.</td></tr>";
+  }
+  document.getElementById("statsSearch").addEventListener("input", function(e){ renderStats(e.target.value); });
+  document.querySelectorAll("#statsRange button").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      document.querySelectorAll("#statsRange button").forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active"); statsRange = btn.dataset.range;
+      renderStats(document.getElementById("statsSearch").value);
+    });
+  });
+
+  function renderClan(q){
+    var head=["Rango","Jugador","TH","Rol en clan","★ en guerra (total)"];
+    var t=document.getElementById("clanTable");
+    t.querySelector("thead").innerHTML="<tr>"+head.map(function(h){return "<th>"+h+"</th>";}).join("")+"</tr>";
+    var rows = state.clan.slice();
+    if(q) rows = rows.filter(function(r){ return byIncludes(["nick","tag"])(r,q); });
+    t.querySelector("tbody").innerHTML = rows.map(function(r){
+      return "<tr><td class='rank num'>"+fmtNum(r.rango,0)+"</td><td class='name'>"+esc(r.nick)+
+        "</td><td class='num'>"+fmtNum(r.th,0)+"</td><td>"+rolPill(r.rol)+
+        "</td><td class='num stars'>"+fmtNum(r.estrellas_guerra,0)+"</td></tr>";
+    }).join("") || "<tr><td class='empty' colspan='5'>Sin roster cargado.</td></tr>";
+  }
+  document.getElementById("clanSearch").addEventListener("input", function(e){ renderClan(e.target.value); });
+
+  function renderAll(){ renderResumen(); renderRanking(); renderPlan(); renderControl(); renderStats(); renderClan(); }
+
+  function updateMetaLine(){
+    var el = document.getElementById("metaLine");
+    el.textContent = (state.meta.lastUpdated ? ("Actualizado "+state.meta.lastUpdated) : "") +
+      (state.meta.historyStart ? (" · historial desde "+state.meta.historyStart) : "");
+    if(state.meta.clanName) document.getElementById("clanName").textContent = state.meta.clanName;
+    if(state.meta.clanTag) document.getElementById("clanTag").textContent = state.meta.clanTag;
+  }
+
+  function load(){
+    fetch("data/data.json", { cache: "no-store" })
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        state.ranking = d.ranking || [];
+        state.top15 = d.top15 || [];
+        state.indicadores = d.indicadores || {};
+        state.stats1m = d.stats_1m || [];
+        state.stats2m = d.stats_2m || [];
+        state.clan = d.clan || [];
+        state.controlEstrellas = d.control_estrellas || [];
+        state.meta = d.meta || {};
+        return fetch("data/plan_rotacion.json", { cache: "no-store" }).then(function(r){ return r.json(); });
+      })
+      .then(function(plan){ state.planRotacion = (plan && plan.rows) || []; })
+      .catch(function(err){ document.getElementById("metaLine").textContent = "No se pudieron cargar los datos."; console.warn(err); })
+      .finally(function(){ renderAll(); updateMetaLine(); });
+  }
+
+  load();
+  setInterval(load, 5 * 60 * 1000); // re-fetch every 5 min while the tab is open
+})();
+</script>
+</body>
+</html>
