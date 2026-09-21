@@ -1,3 +1,4 @@
+
 """Reads history/attacks.jsonl + history/roster_snapshot.json and rebuilds
 data/data.json: ranking, top15, indicadores, stats_1m/2m, clan, meta.
 
@@ -31,6 +32,7 @@ DEFAULT_PARAMS = {
     "Ataques para confianza plena": 12, "Alta desde ataques (2 meses)": 20,
     "Media desde ataques (2 meses)": 8,
     "Titulares fijos": 10, "Titulares en rotación": 5, "Suplentes prioritarios": 5,
+    "Jugadores en control de estrellas": 30,
 }
 
 
@@ -200,7 +202,8 @@ def build():
 
     name_to_tag = {m.get("name"): m.get("tag") for m in members}
     control_rows = []
-    for row in ranking[:20]:
+    n_control = int(params.get("Jugadores en control de estrellas", 30))
+    for row in ranking[:n_control]:
         tag = row["tag"]
         by_day = cwl_by_player_day.get(tag, {})
         d = {f"d{i}": by_day.get(i) for i in range(1, 8)}
