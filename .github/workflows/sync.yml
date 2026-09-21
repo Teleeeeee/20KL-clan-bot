@@ -40,7 +40,14 @@ jobs:
           git add history/ data/data.json
           if git diff --cached --quiet; then
             echo "No changes."
-          else
-            git commit -m "Sync CWL data $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            exit 0
           fi
+          git commit -m "Sync CWL data $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected, pulling and retrying ($i/3)..."
+            git pull --rebase origin main
+          done
+          git push
