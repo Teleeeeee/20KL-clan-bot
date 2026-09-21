@@ -201,6 +201,26 @@
       "rol": "Titular fijo"
     },
     {
+      "player": "angelitous",
+      "tag": "#2GYQPJPY9",
+      "th": 18,
+      "atq1m": 2,
+      "prom1m": 3,
+      "p3_1m": 1.0,
+      "pfaltas1m": 0,
+      "score1m": 64.3056,
+      "atq2m": 2,
+      "prom2m": 3,
+      "p3_2m": 1.0,
+      "pfaltas2m": 0,
+      "score2m": 64.3056,
+      "tendencia": null,
+      "score_final": 64.3056,
+      "confianza": "Baja",
+      "rank": 11,
+      "rol": "Titular rotación"
+    },
+    {
       "player": "Leonardo13",
       "tag": "#L9GQU029V",
       "th": 15,
@@ -217,7 +237,7 @@
       "tendencia": null,
       "score_final": 61.4444,
       "confianza": "Baja",
-      "rank": 11,
+      "rank": 12,
       "rol": "Titular rotación"
     },
     {
@@ -237,7 +257,7 @@
       "tendencia": null,
       "score_final": 61.3399,
       "confianza": "Baja",
-      "rank": 12,
+      "rank": 13,
       "rol": "Titular rotación"
     },
     {
@@ -257,7 +277,7 @@
       "tendencia": null,
       "score_final": 61.3368,
       "confianza": "Baja",
-      "rank": 13,
+      "rank": 14,
       "rol": "Titular rotación"
     },
     {
@@ -277,7 +297,7 @@
       "tendencia": null,
       "score_final": 61.2326,
       "confianza": "Baja",
-      "rank": 14,
+      "rank": 15,
       "rol": "Titular rotación"
     },
     {
@@ -297,8 +317,8 @@
       "tendencia": null,
       "score_final": 60.4167,
       "confianza": "Baja",
-      "rank": 15,
-      "rol": "Titular rotación"
+      "rank": 16,
+      "rol": "Suplente prioritario"
     },
     {
       "player": "pachiche123",
@@ -317,33 +337,13 @@
       "tendencia": null,
       "score_final": 60.3333,
       "confianza": "Baja",
-      "rank": 16,
+      "rank": 17,
       "rol": "Suplente prioritario"
     },
     {
       "player": "Say May Name",
       "tag": "#GLCU09UCP",
       "th": 17,
-      "atq1m": 0,
-      "prom1m": 0,
-      "p3_1m": 0.0,
-      "pfaltas1m": 0,
-      "score1m": 60,
-      "atq2m": 0,
-      "prom2m": 0,
-      "p3_2m": 0.0,
-      "pfaltas2m": 0,
-      "score2m": 60,
-      "tendencia": null,
-      "score_final": 60.0,
-      "confianza": "Baja",
-      "rank": 17,
-      "rol": "Suplente prioritario"
-    },
-    {
-      "player": "angelitous",
-      "tag": "#2GYQPJPY9",
-      "th": 18,
       "atq1m": 0,
       "prom1m": 0,
       "p3_1m": 0.0,
@@ -601,6 +601,26 @@
       "rol": "Reserva"
     },
     {
+      "player": "Alx",
+      "tag": "#2GGULR20L",
+      "th": 16,
+      "atq1m": 0,
+      "prom1m": 0,
+      "p3_1m": 0.0,
+      "pfaltas1m": 0,
+      "score1m": 60,
+      "atq2m": 0,
+      "prom2m": 0,
+      "p3_2m": 0.0,
+      "pfaltas2m": 0,
+      "score2m": 60,
+      "tendencia": null,
+      "score_final": 60.0,
+      "confianza": "Baja",
+      "rank": 31,
+      "rol": "Reserva"
+    },
+    {
       "player": "kamylo",
       "tag": "#QQG8PQL9Y",
       "th": 16,
@@ -617,7 +637,7 @@
       "tendencia": null,
       "score_final": 60.0,
       "confianza": "Baja",
-      "rank": 31,
+      "rank": 32,
       "rol": "Reserva"
     },
     {
@@ -637,7 +657,27 @@
       "tendencia": null,
       "score_final": 60.0,
       "confianza": "Baja",
-      "rank": 32,
+      "rank": 33,
+      "rol": "Reserva"
+    },
+    {
+      "player": "Quandale Dingle",
+      "tag": "#PG2CPYC9V",
+      "th": 13,
+      "atq1m": 0,
+      "prom1m": 0,
+      "p3_1m": 0.0,
+      "pfaltas1m": 0,
+      "score1m": 60,
+      "atq2m": 0,
+      "prom2m": 0,
+      "p3_2m": 0.0,
+      "pfaltas2m": 0,
+      "score2m": 60,
+      "tendencia": null,
+      "score_final": 60.0,
+      "confianza": "Baja",
+      "rank": 34,
       "rol": "Reserva"
     },
     {
@@ -657,27 +697,7 @@
       "tendencia": null,
       "score_final": 60.0,
       "confianza": "Baja",
-      "rank": 33,
-      "rol": "Reserva"
-    },
-    {
-      "player": "Quandale Dingle",
-      "tag": "#PG2CPYC9V",
-      "th": 12,
-      "atq1m": 0,
-      "prom1m": 0,
-      "p3_1m": 0.0,
-      "pfaltas1m": 0,
-      "score1m": 60,
-      "atq2m": 0,
-      "prom2m": 0,
-      "p3_2m": 0.0,
-      "pfaltas2m": 0,
-      "score2m": 60,
-      "tendencia": null,
-      "score_final": 60.0,
-      "confianza": "Baja",
-      "rank": 34,
+      "rank": 35,
       "rol": "Reserva"
     },
     {
@@ -697,7 +717,7 @@
       "tendencia": null,
       "score_final": 60.0,
       "confianza": "Baja",
-      "rank": 35,
+      "rank": 36,
       "rol": "Reserva"
     },
     {
@@ -717,7 +737,7 @@
       "tendencia": null,
       "score_final": 59.1667,
       "confianza": "Baja",
-      "rank": 36,
+      "rank": 37,
       "rol": "Reserva"
     },
     {
@@ -737,7 +757,7 @@
       "tendencia": null,
       "score_final": 59.0572,
       "confianza": "Baja",
-      "rank": 37,
+      "rank": 38,
       "rol": "Reserva"
     },
     {
@@ -757,7 +777,7 @@
       "tendencia": null,
       "score_final": 58.1944,
       "confianza": "Baja",
-      "rank": 38,
+      "rank": 39,
       "rol": "Reserva"
     },
     {
@@ -776,26 +796,6 @@
       "score2m": 58.0903,
       "tendencia": null,
       "score_final": 58.0903,
-      "confianza": "Baja",
-      "rank": 39,
-      "rol": "Reserva"
-    },
-    {
-      "player": "L&ST&R",
-      "tag": "#LVULGPQ9",
-      "th": 15,
-      "atq1m": 1,
-      "prom1m": 1,
-      "p3_1m": 0.0,
-      "pfaltas1m": 0,
-      "score1m": 57.8819,
-      "atq2m": 1,
-      "prom2m": 1,
-      "p3_2m": 0.0,
-      "pfaltas2m": 0,
-      "score2m": 57.8819,
-      "tendencia": null,
-      "score_final": 57.8819,
       "confianza": "Baja",
       "rank": 40,
       "rol": "Reserva"
@@ -821,6 +821,26 @@
       "rol": "Reserva"
     },
     {
+      "player": "L&ST&R",
+      "tag": "#LVULGPQ9",
+      "th": 15,
+      "atq1m": 2,
+      "prom1m": 1.5,
+      "p3_1m": 0.0,
+      "pfaltas1m": 0,
+      "score1m": 57.0833,
+      "atq2m": 2,
+      "prom2m": 1.5,
+      "p3_2m": 0.0,
+      "pfaltas2m": 0,
+      "score2m": 57.0833,
+      "tendencia": null,
+      "score_final": 57.0833,
+      "confianza": "Baja",
+      "rank": 42,
+      "rol": "Reserva"
+    },
+    {
       "player": "Joeseph",
       "tag": "#YCUCG800C",
       "th": 15,
@@ -837,7 +857,7 @@
       "tendencia": null,
       "score_final": 56.9722,
       "confianza": "Baja",
-      "rank": 42,
+      "rank": 43,
       "rol": "Reserva"
     }
   ],
@@ -924,6 +944,14 @@
     },
     {
       "rank": 11,
+      "player": "angelitous",
+      "score_final": 64.3056,
+      "tendencia": null,
+      "prom1m": 3,
+      "p3_1m": 1.0
+    },
+    {
+      "rank": 12,
       "player": "Leonardo13",
       "score_final": 61.4444,
       "tendencia": null,
@@ -931,7 +959,7 @@
       "p3_1m": 0.5
     },
     {
-      "rank": 12,
+      "rank": 13,
       "player": "Nilodudes",
       "score_final": 61.3399,
       "tendencia": null,
@@ -939,7 +967,7 @@
       "p3_1m": 0.5
     },
     {
-      "rank": 13,
+      "rank": 14,
       "player": "muset",
       "score_final": 61.3368,
       "tendencia": null,
@@ -947,28 +975,20 @@
       "p3_1m": 0.5
     },
     {
-      "rank": 14,
+      "rank": 15,
       "player": "Matikun",
       "score_final": 61.2326,
       "tendencia": null,
       "prom1m": 2.5,
       "p3_1m": 0.5
-    },
-    {
-      "rank": 15,
-      "player": "LEYENDÆ",
-      "score_final": 60.4167,
-      "tendencia": null,
-      "prom1m": 2,
-      "p3_1m": 0.5
     }
   ],
   "indicadores": {
-    "Score promedio Top 15": 63.4345,
-    "Promedio estrellas 1 mes Top 15": 2.8,
-    "Triple rate 1 mes Top 15": 0.8333,
+    "Score promedio Top 15": 63.6938,
+    "Promedio estrellas 1 mes Top 15": 2.8667,
+    "Triple rate 1 mes Top 15": 0.8667,
     "Ataques perdidos 1 mes Top 15": 0,
-    "Proyección estrellas por día": 42.0
+    "Proyección estrellas por día": 43.0
   },
   "parametros": {
     "Peso último mes": 0.65,
@@ -1293,6 +1313,36 @@
       "def_p0s": 0.0
     },
     {
+      "tag": "#2GYQPJPY9",
+      "name": "angelitous",
+      "date_last_war": null,
+      "avg_th": 18,
+      "atq_count": 2,
+      "atq_avg_th_target": 15,
+      "atq_avg_stars": 3,
+      "atq_3s": 2,
+      "atq_p3s": 100.0,
+      "atq_2s": 0,
+      "atq_p2s": 0.0,
+      "atq_1s": 0,
+      "atq_p1s": 0.0,
+      "atq_0s": 0,
+      "atq_p0s": 0.0,
+      "atq_miss": 0,
+      "atq_pmiss": 0,
+      "def_count": 1,
+      "def_avg_th": 17,
+      "def_avg_stars": 2,
+      "def_3s": 0,
+      "def_p3s": 0.0,
+      "def_2s": 1,
+      "def_p2s": 100.0,
+      "def_1s": 0,
+      "def_p1s": 0.0,
+      "def_0s": 0,
+      "def_p0s": 0.0
+    },
+    {
       "tag": "#L9GQU029V",
       "name": "Leonardo13",
       "date_last_war": null,
@@ -1501,36 +1551,6 @@
       "def_p1s": 0,
       "def_0s": 0,
       "def_p0s": 0
-    },
-    {
-      "tag": "#2GYQPJPY9",
-      "name": "angelitous",
-      "date_last_war": null,
-      "avg_th": 18,
-      "atq_count": 0,
-      "atq_avg_th_target": null,
-      "atq_avg_stars": 0,
-      "atq_3s": 0,
-      "atq_p3s": 0,
-      "atq_2s": 0,
-      "atq_p2s": 0,
-      "atq_1s": 0,
-      "atq_p1s": 0,
-      "atq_0s": 0,
-      "atq_p0s": 0,
-      "atq_miss": 0,
-      "atq_pmiss": 0,
-      "def_count": 1,
-      "def_avg_th": 17,
-      "def_avg_stars": 2,
-      "def_3s": 0,
-      "def_p3s": 0.0,
-      "def_2s": 1,
-      "def_p2s": 100.0,
-      "def_1s": 0,
-      "def_p1s": 0.0,
-      "def_0s": 0,
-      "def_p0s": 0.0
     },
     {
       "tag": "#Y89QR2CR2",
@@ -1893,6 +1913,36 @@
       "def_p0s": 0
     },
     {
+      "tag": "#2GGULR20L",
+      "name": "Alx",
+      "date_last_war": null,
+      "avg_th": 16,
+      "atq_count": 0,
+      "atq_avg_th_target": null,
+      "atq_avg_stars": 0,
+      "atq_3s": 0,
+      "atq_p3s": 0,
+      "atq_2s": 0,
+      "atq_p2s": 0,
+      "atq_1s": 0,
+      "atq_p1s": 0,
+      "atq_0s": 0,
+      "atq_p0s": 0,
+      "atq_miss": 0,
+      "atq_pmiss": 0,
+      "def_count": 0,
+      "def_avg_th": null,
+      "def_avg_stars": 0,
+      "def_3s": 0,
+      "def_p3s": 0,
+      "def_2s": 0,
+      "def_p2s": 0,
+      "def_1s": 0,
+      "def_p1s": 0,
+      "def_0s": 0,
+      "def_p0s": 0
+    },
+    {
       "tag": "#QQG8PQL9Y",
       "name": "kamylo",
       "date_last_war": null,
@@ -1953,10 +2003,10 @@
       "def_p0s": 0
     },
     {
-      "tag": "#2J9LU90PQ",
-      "name": "Guerrero Seb.",
+      "tag": "#PG2CPYC9V",
+      "name": "Quandale Dingle",
       "date_last_war": null,
-      "avg_th": 12,
+      "avg_th": 13,
       "atq_count": 0,
       "atq_avg_th_target": null,
       "atq_avg_stars": 0,
@@ -1983,8 +2033,8 @@
       "def_p0s": 0
     },
     {
-      "tag": "#PG2CPYC9V",
-      "name": "Quandale Dingle",
+      "tag": "#2J9LU90PQ",
+      "name": "Guerrero Seb.",
       "date_last_war": null,
       "avg_th": 12,
       "atq_count": 0,
@@ -2163,36 +2213,6 @@
       "def_p0s": 0.0
     },
     {
-      "tag": "#LVULGPQ9",
-      "name": "L&ST&R",
-      "date_last_war": null,
-      "avg_th": 15,
-      "atq_count": 1,
-      "atq_avg_th_target": 15,
-      "atq_avg_stars": 1,
-      "atq_3s": 0,
-      "atq_p3s": 0.0,
-      "atq_2s": 0,
-      "atq_p2s": 0.0,
-      "atq_1s": 1,
-      "atq_p1s": 100.0,
-      "atq_0s": 0,
-      "atq_p0s": 0.0,
-      "atq_miss": 0,
-      "atq_pmiss": 0,
-      "def_count": 1,
-      "def_avg_th": 15,
-      "def_avg_stars": 3,
-      "def_3s": 1,
-      "def_p3s": 100.0,
-      "def_2s": 0,
-      "def_p2s": 0.0,
-      "def_1s": 0,
-      "def_p1s": 0.0,
-      "def_0s": 0,
-      "def_p0s": 0.0
-    },
-    {
       "tag": "#LG2YRC02Q",
       "name": "yo te cómo ati",
       "date_last_war": null,
@@ -2212,6 +2232,36 @@
       "atq_pmiss": 0,
       "def_count": 1,
       "def_avg_th": 14,
+      "def_avg_stars": 3,
+      "def_3s": 1,
+      "def_p3s": 100.0,
+      "def_2s": 0,
+      "def_p2s": 0.0,
+      "def_1s": 0,
+      "def_p1s": 0.0,
+      "def_0s": 0,
+      "def_p0s": 0.0
+    },
+    {
+      "tag": "#LVULGPQ9",
+      "name": "L&ST&R",
+      "date_last_war": null,
+      "avg_th": 15,
+      "atq_count": 2,
+      "atq_avg_th_target": 15,
+      "atq_avg_stars": 1.5,
+      "atq_3s": 0,
+      "atq_p3s": 0.0,
+      "atq_2s": 1,
+      "atq_p2s": 50.0,
+      "atq_1s": 1,
+      "atq_p1s": 50.0,
+      "atq_0s": 0,
+      "atq_p0s": 0.0,
+      "atq_miss": 0,
+      "atq_pmiss": 0,
+      "def_count": 1,
+      "def_avg_th": 15,
       "def_avg_stars": 3,
       "def_3s": 1,
       "def_p3s": 100.0,
@@ -2555,6 +2605,36 @@
       "def_p0s": 0.0
     },
     {
+      "tag": "#2GYQPJPY9",
+      "name": "angelitous",
+      "date_last_war": null,
+      "avg_th": 18,
+      "atq_count": 2,
+      "atq_avg_th_target": 15,
+      "atq_avg_stars": 3,
+      "atq_3s": 2,
+      "atq_p3s": 100.0,
+      "atq_2s": 0,
+      "atq_p2s": 0.0,
+      "atq_1s": 0,
+      "atq_p1s": 0.0,
+      "atq_0s": 0,
+      "atq_p0s": 0.0,
+      "atq_miss": 0,
+      "atq_pmiss": 0,
+      "def_count": 1,
+      "def_avg_th": 17,
+      "def_avg_stars": 2,
+      "def_3s": 0,
+      "def_p3s": 0.0,
+      "def_2s": 1,
+      "def_p2s": 100.0,
+      "def_1s": 0,
+      "def_p1s": 0.0,
+      "def_0s": 0,
+      "def_p0s": 0.0
+    },
+    {
       "tag": "#L9GQU029V",
       "name": "Leonardo13",
       "date_last_war": null,
@@ -2763,36 +2843,6 @@
       "def_p1s": 0,
       "def_0s": 0,
       "def_p0s": 0
-    },
-    {
-      "tag": "#2GYQPJPY9",
-      "name": "angelitous",
-      "date_last_war": null,
-      "avg_th": 18,
-      "atq_count": 0,
-      "atq_avg_th_target": null,
-      "atq_avg_stars": 0,
-      "atq_3s": 0,
-      "atq_p3s": 0,
-      "atq_2s": 0,
-      "atq_p2s": 0,
-      "atq_1s": 0,
-      "atq_p1s": 0,
-      "atq_0s": 0,
-      "atq_p0s": 0,
-      "atq_miss": 0,
-      "atq_pmiss": 0,
-      "def_count": 1,
-      "def_avg_th": 17,
-      "def_avg_stars": 2,
-      "def_3s": 0,
-      "def_p3s": 0.0,
-      "def_2s": 1,
-      "def_p2s": 100.0,
-      "def_1s": 0,
-      "def_p1s": 0.0,
-      "def_0s": 0,
-      "def_p0s": 0.0
     },
     {
       "tag": "#Y89QR2CR2",
@@ -3155,6 +3205,36 @@
       "def_p0s": 0
     },
     {
+      "tag": "#2GGULR20L",
+      "name": "Alx",
+      "date_last_war": null,
+      "avg_th": 16,
+      "atq_count": 0,
+      "atq_avg_th_target": null,
+      "atq_avg_stars": 0,
+      "atq_3s": 0,
+      "atq_p3s": 0,
+      "atq_2s": 0,
+      "atq_p2s": 0,
+      "atq_1s": 0,
+      "atq_p1s": 0,
+      "atq_0s": 0,
+      "atq_p0s": 0,
+      "atq_miss": 0,
+      "atq_pmiss": 0,
+      "def_count": 0,
+      "def_avg_th": null,
+      "def_avg_stars": 0,
+      "def_3s": 0,
+      "def_p3s": 0,
+      "def_2s": 0,
+      "def_p2s": 0,
+      "def_1s": 0,
+      "def_p1s": 0,
+      "def_0s": 0,
+      "def_p0s": 0
+    },
+    {
       "tag": "#QQG8PQL9Y",
       "name": "kamylo",
       "date_last_war": null,
@@ -3215,10 +3295,10 @@
       "def_p0s": 0
     },
     {
-      "tag": "#2J9LU90PQ",
-      "name": "Guerrero Seb.",
+      "tag": "#PG2CPYC9V",
+      "name": "Quandale Dingle",
       "date_last_war": null,
-      "avg_th": 12,
+      "avg_th": 13,
       "atq_count": 0,
       "atq_avg_th_target": null,
       "atq_avg_stars": 0,
@@ -3245,8 +3325,8 @@
       "def_p0s": 0
     },
     {
-      "tag": "#PG2CPYC9V",
-      "name": "Quandale Dingle",
+      "tag": "#2J9LU90PQ",
+      "name": "Guerrero Seb.",
       "date_last_war": null,
       "avg_th": 12,
       "atq_count": 0,
@@ -3425,36 +3505,6 @@
       "def_p0s": 0.0
     },
     {
-      "tag": "#LVULGPQ9",
-      "name": "L&ST&R",
-      "date_last_war": null,
-      "avg_th": 15,
-      "atq_count": 1,
-      "atq_avg_th_target": 15,
-      "atq_avg_stars": 1,
-      "atq_3s": 0,
-      "atq_p3s": 0.0,
-      "atq_2s": 0,
-      "atq_p2s": 0.0,
-      "atq_1s": 1,
-      "atq_p1s": 100.0,
-      "atq_0s": 0,
-      "atq_p0s": 0.0,
-      "atq_miss": 0,
-      "atq_pmiss": 0,
-      "def_count": 1,
-      "def_avg_th": 15,
-      "def_avg_stars": 3,
-      "def_3s": 1,
-      "def_p3s": 100.0,
-      "def_2s": 0,
-      "def_p2s": 0.0,
-      "def_1s": 0,
-      "def_p1s": 0.0,
-      "def_0s": 0,
-      "def_p0s": 0.0
-    },
-    {
       "tag": "#LG2YRC02Q",
       "name": "yo te cómo ati",
       "date_last_war": null,
@@ -3474,6 +3524,36 @@
       "atq_pmiss": 0,
       "def_count": 1,
       "def_avg_th": 14,
+      "def_avg_stars": 3,
+      "def_3s": 1,
+      "def_p3s": 100.0,
+      "def_2s": 0,
+      "def_p2s": 0.0,
+      "def_1s": 0,
+      "def_p1s": 0.0,
+      "def_0s": 0,
+      "def_p0s": 0.0
+    },
+    {
+      "tag": "#LVULGPQ9",
+      "name": "L&ST&R",
+      "date_last_war": null,
+      "avg_th": 15,
+      "atq_count": 2,
+      "atq_avg_th_target": 15,
+      "atq_avg_stars": 1.5,
+      "atq_3s": 0,
+      "atq_p3s": 0.0,
+      "atq_2s": 1,
+      "atq_p2s": 50.0,
+      "atq_1s": 1,
+      "atq_p1s": 50.0,
+      "atq_0s": 0,
+      "atq_p0s": 0.0,
+      "atq_miss": 0,
+      "atq_pmiss": 0,
+      "def_count": 1,
+      "def_avg_th": 15,
       "def_avg_stars": 3,
       "def_3s": 1,
       "def_p3s": 100.0,
@@ -3565,11 +3645,19 @@
       "estrellas_guerra": null
     },
     {
+      "tag": "#GLGLG92RR",
+      "nick": "Manuel",
+      "th": 16,
+      "rol": "member",
+      "rango": 7,
+      "estrellas_guerra": null
+    },
+    {
       "tag": "#9YPLUQ9GV",
       "nick": "muset",
       "th": 16,
       "rol": "admin",
-      "rango": 7,
+      "rango": 8,
       "estrellas_guerra": null
     },
     {
@@ -3577,21 +3665,13 @@
       "nick": "Anthony",
       "th": 17,
       "rol": "member",
-      "rango": 8,
+      "rango": 9,
       "estrellas_guerra": null
     },
     {
       "tag": "#2GYQPJPY9",
       "nick": "angelitous",
       "th": 18,
-      "rol": "member",
-      "rango": 9,
-      "estrellas_guerra": null
-    },
-    {
-      "tag": "#GLGLG92RR",
-      "nick": "Manuel",
-      "th": 16,
       "rol": "member",
       "rango": 10,
       "estrellas_guerra": null
@@ -3757,11 +3837,19 @@
       "estrellas_guerra": null
     },
     {
+      "tag": "#2GGULR20L",
+      "nick": "Alx",
+      "th": 16,
+      "rol": "member",
+      "rango": 31,
+      "estrellas_guerra": null
+    },
+    {
       "tag": "#LGJP89JLQ",
       "nick": "(♡$€£♡rvio♡☆)",
       "th": 16,
       "rol": "member",
-      "rango": 31,
+      "rango": 32,
       "estrellas_guerra": null
     },
     {
@@ -3769,7 +3857,7 @@
       "nick": "kamylo",
       "th": 16,
       "rol": "member",
-      "rango": 32,
+      "rango": 33,
       "estrellas_guerra": null
     },
     {
@@ -3777,7 +3865,7 @@
       "nick": "Joeseph",
       "th": 15,
       "rol": "member",
-      "rango": 33,
+      "rango": 34,
       "estrellas_guerra": null
     },
     {
@@ -3785,7 +3873,7 @@
       "nick": "¥j.a.v.i.e.r ¥",
       "th": 14,
       "rol": "member",
-      "rango": 34,
+      "rango": 35,
       "estrellas_guerra": null
     },
     {
@@ -3793,7 +3881,7 @@
       "nick": "Ezequiel",
       "th": 14,
       "rol": "member",
-      "rango": 35,
+      "rango": 36,
       "estrellas_guerra": null
     },
     {
@@ -3801,7 +3889,7 @@
       "nick": "andres",
       "th": 13,
       "rol": "member",
-      "rango": 36,
+      "rango": 37,
       "estrellas_guerra": null
     },
     {
@@ -3809,7 +3897,7 @@
       "nick": "yo te cómo ati",
       "th": 13,
       "rol": "member",
-      "rango": 37,
+      "rango": 38,
       "estrellas_guerra": null
     },
     {
@@ -3817,20 +3905,12 @@
       "nick": "Nico (CBA) Arg",
       "th": 13,
       "rol": "admin",
-      "rango": 38,
+      "rango": 39,
       "estrellas_guerra": null
     },
     {
       "tag": "#GY9CRQCL0",
       "nick": "LEYENDÆ",
-      "th": 12,
-      "rol": "member",
-      "rango": 39,
-      "estrellas_guerra": null
-    },
-    {
-      "tag": "#2J9LU90PQ",
-      "nick": "Guerrero Seb.",
       "th": 12,
       "rol": "member",
       "rango": 40,
@@ -3839,9 +3919,17 @@
     {
       "tag": "#PG2CPYC9V",
       "nick": "Quandale Dingle",
-      "th": 12,
+      "th": 13,
       "rol": "member",
       "rango": 41,
+      "estrellas_guerra": null
+    },
+    {
+      "tag": "#2J9LU90PQ",
+      "nick": "Guerrero Seb.",
+      "th": 12,
+      "rol": "member",
+      "rango": 42,
       "estrellas_guerra": null
     },
     {
@@ -3849,7 +3937,7 @@
       "nick": "xXDarkSoulXx",
       "th": 16,
       "rol": "member",
-      "rango": 42,
+      "rango": 43,
       "estrellas_guerra": null
     }
   ],
@@ -4036,7 +4124,7 @@
     },
     {
       "rank": 11,
-      "player": "Leonardo13",
+      "player": "angelitous",
       "rol": "Titular rotación",
       "d1": null,
       "d2": null,
@@ -4054,7 +4142,7 @@
     },
     {
       "rank": 12,
-      "player": "Nilodudes",
+      "player": "Leonardo13",
       "rol": "Titular rotación",
       "d1": null,
       "d2": null,
@@ -4072,7 +4160,7 @@
     },
     {
       "rank": 13,
-      "player": "muset",
+      "player": "Nilodudes",
       "rol": "Titular rotación",
       "d1": null,
       "d2": null,
@@ -4090,7 +4178,7 @@
     },
     {
       "rank": 14,
-      "player": "Matikun",
+      "player": "muset",
       "rol": "Titular rotación",
       "d1": null,
       "d2": null,
@@ -4108,7 +4196,7 @@
     },
     {
       "rank": 15,
-      "player": "LEYENDÆ",
+      "player": "Matikun",
       "rol": "Titular rotación",
       "d1": null,
       "d2": null,
@@ -4126,7 +4214,7 @@
     },
     {
       "rank": 16,
-      "player": "pachiche123",
+      "player": "LEYENDÆ",
       "rol": "Suplente prioritario",
       "d1": null,
       "d2": null,
@@ -4144,7 +4232,7 @@
     },
     {
       "rank": 17,
-      "player": "Say May Name",
+      "player": "pachiche123",
       "rol": "Suplente prioritario",
       "d1": null,
       "d2": null,
@@ -4162,7 +4250,7 @@
     },
     {
       "rank": 18,
-      "player": "angelitous",
+      "player": "Say May Name",
       "rol": "Suplente prioritario",
       "d1": null,
       "d2": null,
@@ -4398,7 +4486,7 @@
   "meta": {
     "clanTag": "#2VJ2LPY8",
     "clanName": "20,000 Leagues",
-    "lastUpdated": "2026-09-21 19:59 UTC",
+    "lastUpdated": "2026-09-21 22:45 UTC",
     "historyStart": "2026-09-22",
     "source": "Clash of Clans API (oficial) vía cocproxy.royaleapi.dev"
   }
