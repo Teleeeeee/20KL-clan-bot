@@ -78,6 +78,12 @@
   .empty{ text-align:center; padding:40px 10px; color:var(--text-dim); }
   .footnote{ font-size:11.5px; color:var(--text-dim); margin-top:6px; }
   .banner{ background:var(--accent-soft); color:var(--accent-ink); border-radius:8px; padding:8px 12px; font-size:12.5px; margin-bottom:14px; }
+  .card h3{ font-family:"Oswald",sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:.03em; color:var(--text-dim); margin:18px 0 8px; padding-top:14px; border-top:1px solid var(--border); }
+  .legend-grid{ display:grid; gap:10px; font-size:13px; line-height:1.5; }
+  .legend-grid b{ color:var(--accent-ink); }
+  .legend-p{ font-size:13px; line-height:1.6; color:var(--text); }
+  .legend-p + .legend-p{ margin-top:8px; }
+  .legend-p b{ color:var(--accent-ink); }
   @media (max-width:520px){ .brand h1{ font-size:19px; } .kpi .value{ font-size:20px; } }
 </style>
 </head>
@@ -114,6 +120,32 @@
     <h2>Ranking completo</h2>
     <div class="toolbar"><input type="search" id="rankingSearch" placeholder="Buscar jugador…"></div>
     <div class="tablewrap"><table id="rankingTable"><thead></thead><tbody></tbody></table></div>
+  </div>
+  <div class="card">
+    <h2>Leyenda — qué significa cada columna</h2>
+    <div class="sub">Referencia rápida para leer la tabla de arriba.</div>
+    <div class="legend-grid">
+      <div><b>#</b> — Posición en el ranking, ordenada de mayor a menor Score.</div>
+      <div><b>TH</b> — Ayuntamiento (Town Hall) actual del jugador.</div>
+      <div><b>Rol</b> — Puesto sugerido según su posición en el ranking: <b>Titular fijo</b> (puestos 1–10), <b>Titular rotación</b> (11–15), <b>Suplente prioritario</b> (16–20), <b>Reserva</b> (21 en adelante).</div>
+      <div><b>Confianza</b> — Qué tan representativo es el Score, según la cantidad de ataques registrados en los últimos 2 meses: <b>Alta</b> (20 o más ataques), <b>Media</b> (entre 8 y 19), <b>Baja</b> (menos de 8 — todavía hay poco historial, el Score puede no reflejar bien su nivel real).</div>
+      <div><b>Score</b> — Puntaje de 0 a 100 que resume el rendimiento del jugador. Cómo se calcula, más abajo.</div>
+      <div><b>Tend.</b> (tendencia) — Compara la calidad de juego de este mes contra el mes anterior. <span class="trend up">▲</span> mejorando, <span class="trend down">▼</span> empeorando, <span class="trend flat">■</span> estable.</div>
+      <div><b>Prom★ 1m / Prom★ 2m</b> — Promedio de estrellas por ataque (de 0 a 3) en el último mes / en los últimos 2 meses.</div>
+      <div><b>%3★ 1m / %3★ 2m</b> — Porcentaje de ataques que lograron las 3 estrellas (triple).</div>
+      <div><b>Atq 1m / Atq 2m</b> — Cantidad de ataques registrados (guerras normales + CWL) en ese período.</div>
+    </div>
+    <h3>¿Cómo se calcula el Score?</h3>
+    <div class="legend-p">
+      <p>El Score de cada mes (0 a 100 puntos) combina 5 factores del jugador en ese período:</p>
+      <p>• <b>40 pts</b> — promedio de estrellas por ataque<br>
+      • <b>25 pts</b> — porcentaje de ataques con triple (3★)<br>
+      • <b>15 pts</b> — volumen: cuántos ataques hizo (se llega al máximo con 12 ataques en el período; con menos, pesa proporcionalmente menos)<br>
+      • <b>10 pts</b> — asistencia: haber usado los ataques disponibles en vez de perderlos<br>
+      • <b>10 pts</b> — dificultad de los objetivos atacados, comparando su Town Hall contra el del objetivo</p>
+      <p>Con pocos ataques en el período (menos de 12), el Score se acerca a un valor neutral de 60 en vez de irse a un extremo — así un jugador con poco historial no queda injustamente arriba ni abajo. Por eso conviene mirar la columna <b>Confianza</b> junto con el Score.</p>
+      <p>El <b>Score final</b> que se muestra en el ranking pondera 65% el mes actual y 35% el mes anterior, para no basarse solo en la última guerra.</p>
+    </div>
   </div>
 </section>
 
