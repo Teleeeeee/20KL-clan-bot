@@ -1,7 +1,7 @@
 {
   "clan_name": "20,000 Leagues",
   "clan_tag": "#2VJ2LPY8",
-  "fetched_at": "2026-09-23T22:08:06.320046+00:00",
+  "fetched_at": "2026-09-24T00:45:31.790976+00:00",
   "members": [
     {
       "tag": "#8VPQY29Y0",
@@ -135,7 +135,7 @@
       "builderBaseTrophies": 3166,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 7271,
+      "donations": 7434,
       "donationsReceived": 5032,
       "playerHouse": {
         "elements": [
@@ -454,7 +454,7 @@
       "clanRank": 9,
       "previousClanRank": 8,
       "donations": 1440,
-      "donationsReceived": 497,
+      "donationsReceived": 577,
       "playerHouse": {
         "elements": [
           {
@@ -502,7 +502,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/DIMeRH3N4lrNObA3zAmk_eUin8nvNeLR89qYznnA--s.png"
         }
       },
-      "trophies": 216,
+      "trophies": 313,
       "builderBaseTrophies": 3996,
       "clanRank": 10,
       "previousClanRank": 10,
@@ -556,7 +556,7 @@
         }
       },
       "trophies": 180,
-      "builderBaseTrophies": 3266,
+      "builderBaseTrophies": 3272,
       "clanRank": 11,
       "previousClanRank": 9,
       "donations": 1281,
@@ -641,8 +641,8 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/YCZ7O_3_c8eCBYvX-92qiWeLc6Md6eNJ5A8O-2vUg7I.png"
         }
       },
-      "trophies": 307,
-      "builderBaseTrophies": 3265,
+      "trophies": 318,
+      "builderBaseTrophies": 3382,
       "clanRank": 13,
       "previousClanRank": 12,
       "donations": 103,
@@ -1065,12 +1065,12 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/vxV7LI0votsz0_n-8lW-Lag96D5HwKsEgEk_7247zC4.png"
         }
       },
-      "trophies": 225,
+      "trophies": 254,
       "builderBaseTrophies": 2782,
       "clanRank": 21,
       "previousClanRank": 19,
       "donations": 279,
-      "donationsReceived": 1240,
+      "donationsReceived": 1323,
       "playerHouse": {
         "elements": [
           {
@@ -2138,7 +2138,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
         }
       },
-      "trophies": 128,
+      "trophies": 151,
       "builderBaseTrophies": 1843,
       "clanRank": 42,
       "previousClanRank": 40,
@@ -2170,6 +2170,59 @@
       }
     },
     {
+      "tag": "#QV9J9CV82",
+      "name": "メデーLluv-Unreal",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 85,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+          "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+        }
+      },
+      "leagueTier": {
+        "id": 105000008,
+        "name": "Archer League 8",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/lzneKpnJ_ADL1Xb1rceH7-svqRN1UaLnI7ldd8BbyxI.png"
+        }
+      },
+      "trophies": 289,
+      "builderBaseTrophies": 0,
+      "clanRank": 43,
+      "previousClanRank": 0,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000086
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000014
+          },
+          {
+            "type": "decoration",
+            "id": 82000067
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000000,
+        "name": "Wood League V"
+      }
+    },
+    {
       "tag": "#Q9LG8LJPG",
       "name": "LUIS",
       "role": "member",
@@ -2193,7 +2246,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2555,
-      "clanRank": 43,
+      "clanRank": 44,
       "previousClanRank": 41,
       "donations": 0,
       "donationsReceived": 0,
