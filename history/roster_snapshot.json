@@ -1,7 +1,7 @@
 {
   "clan_name": "20,000 Leagues",
   "clan_tag": "#2VJ2LPY8",
-  "fetched_at": "2026-09-26T14:39:41.930851+00:00",
+  "fetched_at": "2026-09-26T18:25:50.716535+00:00",
   "members": [
     {
       "tag": "#8VPQY29Y0",
@@ -78,12 +78,12 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/VFqkaQimExWtSmIf9PC8WEpj4Vd58oLjPWyZqfVb5VE.png"
         }
       },
-      "trophies": 9,
+      "trophies": 643,
       "builderBaseTrophies": 2986,
       "clanRank": 2,
       "previousClanRank": 2,
       "donations": 1036,
-      "donationsReceived": 1806,
+      "donationsReceived": 1886,
       "playerHouse": {
         "elements": [
           {
@@ -184,7 +184,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/qVORiRguZ-xMq8L0g7rE1-rZuiA-lKlI8VKuMndRy4w.png"
         }
       },
-      "trophies": 765,
+      "trophies": 781,
       "builderBaseTrophies": 2537,
       "clanRank": 4,
       "previousClanRank": 4,
@@ -1044,6 +1044,59 @@
       }
     },
     {
+      "tag": "#YGR0G8QJ0",
+      "name": "shadow king",
+      "role": "member",
+      "townHallLevel": 16,
+      "expLevel": 227,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+          "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+        }
+      },
+      "leagueTier": {
+        "id": 105000023,
+        "name": "P.E.K.K.A League 23",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/0eDMQmsiZ0gs8xzViGfVETnYjwzgELTKwYhH3izevT4.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/0eDMQmsiZ0gs8xzViGfVETnYjwzgELTKwYhH3izevT4.png"
+        }
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 4424,
+      "clanRank": 21,
+      "previousClanRank": 0,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000004
+          },
+          {
+            "type": "walls",
+            "id": 82000057
+          },
+          {
+            "type": "roof",
+            "id": 82000082
+          },
+          {
+            "type": "decoration",
+            "id": 82000083
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000032,
+        "name": "Platinum League III"
+      }
+    },
+    {
       "tag": "#9VC2JCUQC",
       "name": "Xavoo05",
       "role": "member",
@@ -1067,7 +1120,7 @@
       },
       "trophies": 498,
       "builderBaseTrophies": 2934,
-      "clanRank": 21,
+      "clanRank": 22,
       "previousClanRank": 22,
       "donations": 288,
       "donationsReceived": 335,
@@ -1120,7 +1173,7 @@
       },
       "trophies": 271,
       "builderBaseTrophies": 2600,
-      "clanRank": 22,
+      "clanRank": 23,
       "previousClanRank": 23,
       "donations": 77,
       "donationsReceived": 84,
@@ -1171,9 +1224,9 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/iTWXPUUFQy0uEb7NDpMTyzGMFOJvlC4SLAqlHYgC8do.png"
         }
       },
-      "trophies": 93,
+      "trophies": 119,
       "builderBaseTrophies": 2917,
-      "clanRank": 23,
+      "clanRank": 24,
       "previousClanRank": 24,
       "donations": 3,
       "donationsReceived": 280,
@@ -1226,7 +1279,7 @@
       },
       "trophies": 371,
       "builderBaseTrophies": 3342,
-      "clanRank": 24,
+      "clanRank": 25,
       "previousClanRank": 26,
       "donations": 625,
       "donationsReceived": 3087,
@@ -1279,7 +1332,7 @@
       },
       "trophies": 44,
       "builderBaseTrophies": 2175,
-      "clanRank": 25,
+      "clanRank": 26,
       "previousClanRank": 27,
       "donations": 0,
       "donationsReceived": 157,
@@ -1332,7 +1385,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2736,
-      "clanRank": 26,
+      "clanRank": 27,
       "previousClanRank": 28,
       "donations": 790,
       "donationsReceived": 2605,
@@ -1365,7 +1418,7 @@
       },
       "trophies": 608,
       "builderBaseTrophies": 2856,
-      "clanRank": 27,
+      "clanRank": 28,
       "previousClanRank": 29,
       "donations": 445,
       "donationsReceived": 133,
@@ -1418,7 +1471,7 @@
       },
       "trophies": 399,
       "builderBaseTrophies": 2617,
-      "clanRank": 28,
+      "clanRank": 29,
       "previousClanRank": 30,
       "donations": 224,
       "donationsReceived": 0,
@@ -1451,7 +1504,7 @@
       },
       "trophies": 68,
       "builderBaseTrophies": 1457,
-      "clanRank": 29,
+      "clanRank": 30,
       "previousClanRank": 31,
       "donations": 0,
       "donationsReceived": 0,
@@ -1504,7 +1557,7 @@
       },
       "trophies": 116,
       "builderBaseTrophies": 2757,
-      "clanRank": 30,
+      "clanRank": 31,
       "previousClanRank": 32,
       "donations": 611,
       "donationsReceived": 516,
@@ -1557,7 +1610,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2545,
-      "clanRank": 31,
+      "clanRank": 32,
       "previousClanRank": 33,
       "donations": 1274,
       "donationsReceived": 0,
@@ -1608,9 +1661,9 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/GeLamlTvRYNnZp5lEW64pyaORN30rCdrxTjU7oJoTN8.png"
         }
       },
-      "trophies": 105,
+      "trophies": 123,
       "builderBaseTrophies": 2552,
-      "clanRank": 32,
+      "clanRank": 33,
       "previousClanRank": 34,
       "donations": 145,
       "donationsReceived": 156,
@@ -1663,7 +1716,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2968,
-      "clanRank": 33,
+      "clanRank": 34,
       "previousClanRank": 35,
       "donations": 197,
       "donationsReceived": 378,
@@ -1716,7 +1769,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2869,
-      "clanRank": 34,
+      "clanRank": 35,
       "previousClanRank": 36,
       "donations": 770,
       "donationsReceived": 154,
@@ -1750,7 +1803,7 @@
       "name": "yo te cómo ati",
       "role": "member",
       "townHallLevel": 13,
-      "expLevel": 121,
+      "expLevel": 122,
       "league": {
         "id": 29000000,
         "name": "Unranked",
@@ -1767,9 +1820,9 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/6BwmbzkNm6p2unZonTauFQ_683uNl4NYtoOXJmEs78c.png"
         }
       },
-      "trophies": 140,
+      "trophies": 157,
       "builderBaseTrophies": 1894,
-      "clanRank": 35,
+      "clanRank": 36,
       "previousClanRank": 37,
       "donations": 54,
       "donationsReceived": 0,
@@ -1822,7 +1875,7 @@
       },
       "trophies": 94,
       "builderBaseTrophies": 2081,
-      "clanRank": 36,
+      "clanRank": 37,
       "previousClanRank": 38,
       "donations": 731,
       "donationsReceived": 1200,
@@ -1875,7 +1928,7 @@
       },
       "trophies": 257,
       "builderBaseTrophies": 1398,
-      "clanRank": 37,
+      "clanRank": 38,
       "previousClanRank": 39,
       "donations": 18,
       "donationsReceived": 72,
@@ -1928,9 +1981,9 @@
       },
       "trophies": 412,
       "builderBaseTrophies": 2242,
-      "clanRank": 38,
+      "clanRank": 39,
       "previousClanRank": 40,
-      "donations": 49,
+      "donations": 129,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -1979,9 +2032,9 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
         }
       },
-      "trophies": 296,
+      "trophies": 308,
       "builderBaseTrophies": 1843,
-      "clanRank": 39,
+      "clanRank": 40,
       "previousClanRank": 41,
       "donations": 54,
       "donationsReceived": 633,
@@ -2034,7 +2087,7 @@
       },
       "trophies": 359,
       "builderBaseTrophies": 0,
-      "clanRank": 40,
+      "clanRank": 41,
       "previousClanRank": 42,
       "donations": 0,
       "donationsReceived": 0,
@@ -2064,6 +2117,59 @@
       }
     },
     {
+      "tag": "#YG80JJCQ9",
+      "name": "teen woolf",
+      "role": "member",
+      "townHallLevel": 16,
+      "expLevel": 153,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+          "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+        }
+      },
+      "leagueTier": {
+        "id": 105000000,
+        "name": "Unranked",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+        }
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 2677,
+      "clanRank": 42,
+      "previousClanRank": 0,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000154
+          },
+          {
+            "type": "walls",
+            "id": 82000140
+          },
+          {
+            "type": "roof",
+            "id": 82000157
+          },
+          {
+            "type": "decoration",
+            "id": 82000138
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000023,
+        "name": "Iron League III"
+      }
+    },
+    {
       "tag": "#209LGG8RY",
       "name": "la maravilla",
       "role": "member",
@@ -2087,7 +2193,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2831,
-      "clanRank": 41,
+      "clanRank": 43,
       "previousClanRank": 0,
       "donations": 0,
       "donationsReceived": 0,
@@ -2140,7 +2246,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2555,
-      "clanRank": 42,
+      "clanRank": 44,
       "previousClanRank": 43,
       "donations": 0,
       "donationsReceived": 0,
