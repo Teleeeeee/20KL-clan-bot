@@ -621,6 +621,26 @@
       "rol": "Reserva"
     },
     {
+      "player": "la maravilla",
+      "tag": "#209LGG8RY",
+      "th": 16,
+      "atq1m": 0,
+      "prom1m": 0,
+      "p3_1m": 0.0,
+      "pfaltas1m": 0,
+      "score1m": 60,
+      "atq2m": 0,
+      "prom2m": 0,
+      "p3_2m": 0.0,
+      "pfaltas2m": 0,
+      "score2m": 60,
+      "tendencia": null,
+      "score_final": 60.0,
+      "confianza": "Baja",
+      "rank": 32,
+      "rol": "Reserva"
+    },
+    {
       "player": "ADNHDZ94",
       "tag": "#LG9VGRLG2",
       "th": 16,
@@ -637,7 +657,7 @@
       "tendencia": null,
       "score_final": 59.9659,
       "confianza": "Baja",
-      "rank": 32,
+      "rank": 33,
       "rol": "Reserva"
     },
     {
@@ -657,7 +677,7 @@
       "tendencia": null,
       "score_final": 59.8956,
       "confianza": "Baja",
-      "rank": 33,
+      "rank": 34,
       "rol": "Reserva"
     },
     {
@@ -677,7 +697,7 @@
       "tendencia": null,
       "score_final": 59.744,
       "confianza": "Baja",
-      "rank": 34,
+      "rank": 35,
       "rol": "Reserva"
     },
     {
@@ -697,7 +717,7 @@
       "tendencia": null,
       "score_final": 58.1944,
       "confianza": "Baja",
-      "rank": 35,
+      "rank": 36,
       "rol": "Reserva"
     },
     {
@@ -717,7 +737,7 @@
       "tendencia": null,
       "score_final": 58.1944,
       "confianza": "Baja",
-      "rank": 36,
+      "rank": 37,
       "rol": "Reserva"
     },
     {
@@ -737,7 +757,7 @@
       "tendencia": null,
       "score_final": 58.1349,
       "confianza": "Baja",
-      "rank": 37,
+      "rank": 38,
       "rol": "Reserva"
     },
     {
@@ -757,7 +777,7 @@
       "tendencia": null,
       "score_final": 57.9991,
       "confianza": "Baja",
-      "rank": 38,
+      "rank": 39,
       "rol": "Reserva"
     },
     {
@@ -777,7 +797,7 @@
       "tendencia": null,
       "score_final": 55.9028,
       "confianza": "Baja",
-      "rank": 39,
+      "rank": 40,
       "rol": "Reserva"
     },
     {
@@ -797,7 +817,7 @@
       "tendencia": null,
       "score_final": 54.6597,
       "confianza": "Baja",
-      "rank": 40,
+      "rank": 41,
       "rol": "Reserva"
     },
     {
@@ -817,7 +837,7 @@
       "tendencia": null,
       "score_final": 54.0812,
       "confianza": "Baja",
-      "rank": 41,
+      "rank": 42,
       "rol": "Reserva"
     }
   ],
@@ -1875,6 +1895,36 @@
     {
       "tag": "#GJJ09LVLU",
       "name": "lemus",
+      "date_last_war": null,
+      "avg_th": 16,
+      "atq_count": 0,
+      "atq_avg_th_target": null,
+      "atq_avg_stars": 0,
+      "atq_3s": 0,
+      "atq_p3s": 0,
+      "atq_2s": 0,
+      "atq_p2s": 0,
+      "atq_1s": 0,
+      "atq_p1s": 0,
+      "atq_0s": 0,
+      "atq_p0s": 0,
+      "atq_miss": 0,
+      "atq_pmiss": 0,
+      "def_count": 0,
+      "def_avg_th": null,
+      "def_avg_stars": 0,
+      "def_3s": 0,
+      "def_p3s": 0,
+      "def_2s": 0,
+      "def_p2s": 0,
+      "def_1s": 0,
+      "def_p1s": 0,
+      "def_0s": 0,
+      "def_p0s": 0
+    },
+    {
+      "tag": "#209LGG8RY",
+      "name": "la maravilla",
       "date_last_war": null,
       "avg_th": 16,
       "atq_count": 0,
@@ -3135,6 +3185,36 @@
       "def_p0s": 0
     },
     {
+      "tag": "#209LGG8RY",
+      "name": "la maravilla",
+      "date_last_war": null,
+      "avg_th": 16,
+      "atq_count": 0,
+      "atq_avg_th_target": null,
+      "atq_avg_stars": 0,
+      "atq_3s": 0,
+      "atq_p3s": 0,
+      "atq_2s": 0,
+      "atq_p2s": 0,
+      "atq_1s": 0,
+      "atq_p1s": 0,
+      "atq_0s": 0,
+      "atq_p0s": 0,
+      "atq_miss": 0,
+      "atq_pmiss": 0,
+      "def_count": 0,
+      "def_avg_th": null,
+      "def_avg_stars": 0,
+      "def_3s": 0,
+      "def_p3s": 0,
+      "def_2s": 0,
+      "def_p2s": 0,
+      "def_1s": 0,
+      "def_p1s": 0,
+      "def_0s": 0,
+      "def_p0s": 0
+    },
+    {
       "tag": "#LG9VGRLG2",
       "name": "ADNHDZ94",
       "date_last_war": null,
@@ -3757,11 +3837,19 @@
       "estrellas_guerra": null
     },
     {
+      "tag": "#209LGG8RY",
+      "nick": "la maravilla",
+      "th": 16,
+      "rol": "member",
+      "rango": 41,
+      "estrellas_guerra": null
+    },
+    {
       "tag": "#Q9LG8LJPG",
       "nick": "LUIS",
       "th": 16,
       "rol": "member",
-      "rango": 41,
+      "rango": 42,
       "estrellas_guerra": null
     }
   ],
@@ -4310,7 +4398,7 @@
   "meta": {
     "clanTag": "#2VJ2LPY8",
     "clanName": "20,000 Leagues",
-    "lastUpdated": "2026-09-26 10:06 UTC",
+    "lastUpdated": "2026-09-26 14:39 UTC",
     "historyStart": "2026-09-22",
     "source": "Clash of Clans API (oficial) vía cocproxy.royaleapi.dev"
   }

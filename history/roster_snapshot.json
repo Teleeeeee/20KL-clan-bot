@@ -1,7 +1,7 @@
 {
   "clan_name": "20,000 Leagues",
   "clan_tag": "#2VJ2LPY8",
-  "fetched_at": "2026-09-26T10:06:32.762716+00:00",
+  "fetched_at": "2026-09-26T14:39:41.930851+00:00",
   "members": [
     {
       "tag": "#8VPQY29Y0",
@@ -25,7 +25,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/VFqkaQimExWtSmIf9PC8WEpj4Vd58oLjPWyZqfVb5VE.png"
         }
       },
-      "trophies": 686,
+      "trophies": 698,
       "builderBaseTrophies": 3170,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -131,7 +131,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/iX8uNhG6jBcQATWFS8a0gtidGy9O1PRYtXZZMTtUK3U.png"
         }
       },
-      "trophies": 470,
+      "trophies": 484,
       "builderBaseTrophies": 3166,
       "clanRank": 3,
       "previousClanRank": 3,
@@ -238,7 +238,7 @@
         }
       },
       "trophies": 635,
-      "builderBaseTrophies": 4012,
+      "builderBaseTrophies": 4017,
       "clanRank": 5,
       "previousClanRank": 5,
       "donations": 4793,
@@ -800,7 +800,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/yIfqSgrhiYRcuMbAPCoeCj1FTmfylCLxnrAljEZc8K0.png"
         }
       },
-      "trophies": 423,
+      "trophies": 450,
       "builderBaseTrophies": 2965,
       "clanRank": 16,
       "previousClanRank": 17,
@@ -1066,7 +1066,7 @@
         }
       },
       "trophies": 498,
-      "builderBaseTrophies": 2943,
+      "builderBaseTrophies": 2934,
       "clanRank": 21,
       "previousClanRank": 22,
       "donations": 288,
@@ -1224,7 +1224,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/WkqDvnK0CXI-Nc0TNTKG_fSuzRYoLRC54HFOdMCxVTI.png"
         }
       },
-      "trophies": 362,
+      "trophies": 371,
       "builderBaseTrophies": 3342,
       "clanRank": 24,
       "previousClanRank": 26,
@@ -1502,7 +1502,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/yS8XBv_a_SNtCpcofsWMFaojRNwO504Py7HyDCBCjYU.png"
         }
       },
-      "trophies": 103,
+      "trophies": 116,
       "builderBaseTrophies": 2757,
       "clanRank": 30,
       "previousClanRank": 32,
@@ -1926,7 +1926,7 @@
           "large": "https://api-assets.clashofclans.com/leaguetiers/326/ieEdz9Mqbo7g9iJfXwTnIh7Iwz-37aPEmWma1ENEwXE.png"
         }
       },
-      "trophies": 380,
+      "trophies": 412,
       "builderBaseTrophies": 2242,
       "clanRank": 38,
       "previousClanRank": 40,
@@ -2064,6 +2064,59 @@
       }
     },
     {
+      "tag": "#209LGG8RY",
+      "name": "la maravilla",
+      "role": "member",
+      "townHallLevel": 16,
+      "expLevel": 217,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leagues/72/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png",
+          "tiny": "https://api-assets.clashofclans.com/leagues/36/e--YMyIexEQQhE4imLoJcwhYn6Uy8KqlgyY3_kFV6t4.png"
+        }
+      },
+      "leagueTier": {
+        "id": 105000000,
+        "name": "Unranked",
+        "iconUrls": {
+          "small": "https://api-assets.clashofclans.com/leaguetiers/125/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png",
+          "large": "https://api-assets.clashofclans.com/leaguetiers/326/yyYo5DUFeFBZvmMEQh0ZxvG-1sUOZ_S3kDMB7RllXX0.png"
+        }
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 2831,
+      "clanRank": 41,
+      "previousClanRank": 0,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000010
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000024,
+        "name": "Iron League II"
+      }
+    },
+    {
       "tag": "#Q9LG8LJPG",
       "name": "LUIS",
       "role": "member",
@@ -2087,7 +2140,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2555,
-      "clanRank": 41,
+      "clanRank": 42,
       "previousClanRank": 43,
       "donations": 0,
       "donationsReceived": 0,
